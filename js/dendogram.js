@@ -88,7 +88,7 @@ dendroGram = function module() {
     var newHeight = d3.max(levelWidth) * 50; // 25 pixels per line
     cluster = cluster.size([newHeight, width - 350]);
 
-    for (var i = 100; i < tree_data.length; i++) {
+    for (var i = 100; i < 1000; i++) {
       var parseTree = parseNewick(tree_data[i])
       //console.log(parseTree)
       updateTree(parseTree);
